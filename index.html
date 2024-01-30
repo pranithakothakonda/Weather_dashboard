@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <header class=" bg-dark text-center p-2 mb-2">
+        <h1 class=" text-white">Weather Dashboard</h1>
+
+    </header>
+    <div class="container">
+        <div class="row">
+
+
+            <div class="col-12 col-md-4 col-lg-3 ">
+                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2" id="search" type="submit">search</button>
+                <!-- <ul>
+                    <li>Austin</li>
+                    <li>Dallas</li>
+                    <li>Houston</li>
+                    <li>San Marcos</li>
+                </ul> -->
+                <div id="cities">
+                    <!-- my preloaded city will show here -->
+                </div>
+            </div>
+            <div class=" col-12 col-md-8 col-lg-9">
+                <div class="bg-light px-5 pb-5 rounded">
+                    <div class="oneDayForcast col-sm-9">
+                        <h1 class="display-4">Day Forecast for <span class="city"></span></h1>
+                        <div><span class="weather"></span> <span class="icon"></span></div>
+                        <!-- <div class="city"> City</div> -->
+                        <div class="text-danger"> <span class="temp">Temp</span>˚F</div>
+                        <div class="wind"> Wind</div>
+                        <div class="humidity"> Humidity</div>
+                        <div class="lon"> UVindex</div>
+                        <div class="lat"> UVindex</div>
+                        <div class="UVindex">UVindex</div>
+                    </div>
+                </div>
+                <div class="row p-5">
+                    <div class="fiveDayForcast">
+                        <h2 class="display-4 pb-3">5 Day Forecast</h2>
+                        <!-- <div class="icon">
+                            <canvas id="icon" width="128" height="128"></canvas>
+                        </div> -->
+                        <div id="fivedayforecast" class="row"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
